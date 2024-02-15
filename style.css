@@ -31,10 +31,11 @@ body {
   height: 4px;
   background-color: pink;
   position: absolute;
-  width: 80px;
   left: 0px;
+  width: 80px;
   top: 52px;
   padding: 0px;
+  transition: 0.5s
 }
 
 .task {
@@ -45,4 +46,8 @@ body {
 
 .task-done{
   text-decoration: line-through;
+}
+
+.task-tabs div{
+  cursor: pointer
 }
