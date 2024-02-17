@@ -36,6 +36,10 @@ function horizonIndicator(e) {
 }
 
 function addTask() {
+  if(taskInput.value === ""){
+    alert("할일을 입력해 주세요")
+    return
+  }
   //console.log("clicked")
   let task = {
     id:randomIDGenerate(),
@@ -43,6 +47,7 @@ function addTask() {
     isComplete: false
   };
   taskList.push(task); //할일 리스트를 만들어준다 (배열)
+  taskInput.value ="";
   console.log(taskList);
   render();
 }
